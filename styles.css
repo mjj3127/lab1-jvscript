@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f9; 
+    width: 350px;
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+div {
+    padding-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin: 10px 5px;
+}
+
+button.randomize {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button.randomize:hover {
+    background-color: #45a049; 
+}
+
+
+p.story {
+    background-color: #ffc125;
+    color: #5e2612;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    visibility: hidden; 
+    transition: visibility 0.5s ease-in-out; 
+}
+
+div {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+    }
+
+    input[type="text"], button.randomize {
+        width: 100%;
+    }
+}
